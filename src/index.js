@@ -12,8 +12,7 @@ import { configureFakeBackend } from './_helpers';
 configureFakeBackend();
 
 new Vue({
-    el: '#app',
-    router,
-    store,
-    render: h => h(App)
-});
+  router,
+  store,
+  render: h => h(App)
+}).$mount('#app');
