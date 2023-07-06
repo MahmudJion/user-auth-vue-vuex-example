@@ -1,9 +1,9 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-import HomePage from '../home/HomePage'
-import LoginPage from '../login/LoginPage'
-import RegisterPage from '../register/RegisterPage'
+import HomePage from '../home/HomePage';
+import LoginPage from '../login/LoginPage';
+import RegisterPage from '../register/RegisterPage';
 
 Vue.use(Router);
 
@@ -15,8 +15,8 @@ export const router = new Router({
     { path: '/register', component: RegisterPage },
 
     // otherwise redirect to home
-    { path: '*', redirect: '/' }
-  ]
+    { path: '*', redirect: '/' },
+  ],
 });
 
 router.beforeEach((to, from, next) => {
@@ -30,4 +30,4 @@ router.beforeEach((to, from, next) => {
   }
 
   next();
-})
+});
